@@ -131,7 +131,7 @@
   font-weight: bold;
   line-height: 23.4px;
   box-sizing: border-box;
-  display: block; 
+  display: block;
   width: 100%;
 }
 
@@ -153,6 +153,7 @@
   margin: 0 20px;
   padding-block-start: 60px;
   font-size: 18px;
+  font-family: 'IBM Plex mono';
 }
 
 .question__section-answer {
@@ -168,6 +169,7 @@
 .question__section-answer-text {
   color: var(--text-color);
   font-size: var(--font-size);
+  font-family: 'IBM Plex mono';
 }
 
 .question__section-answer-link {
@@ -293,7 +295,7 @@
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   line-height: 82.5%;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
   margin: 0;
 }
 
@@ -413,7 +415,7 @@
   .decorative__element {
     margin: 10px;
   }
-  
+
   .frame::before {
     margin: 10px;
   }
