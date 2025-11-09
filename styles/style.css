@@ -12,7 +12,6 @@
   min-height: 100%;
   z-index: 0;
   background-color: var(--background-color);
-  background-position: center;
 }
 
 .header {
@@ -25,6 +24,7 @@
   background-image: var(--backgroung-image);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-clip: border-box;
 }
 
@@ -127,10 +127,12 @@
 .title-decor {
   background-color: var(--accent-color);
   color: var(--sub-text-color);
-  font-size: var(--font-size);
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: bold;
   line-height: 23.4px;
   box-sizing: border-box;
+  display: block; 
+  width: 100%;
 }
 
 .header__text {
@@ -140,15 +142,17 @@
   max-block-size: 71px;
 }
 
-.question__section__one {
-  display: grid;
-  grid-template-columns: 34% 66%;
-  margin: 0 20px;
-  padding-block-start: 60px;
+.question__section-title {
+  font-size: 18px;
+  color: var(--btn-color);
 }
 
-.question__section-title {
-  color: var(--accent-color);
+.question__section-one {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 20px;
+  padding-block-start: 60px;
+  font-size: 18px;
 }
 
 .question__section-answer {
@@ -187,6 +191,7 @@
 .question__section-two {
   margin: 0 20px;
   padding-block: 80px;
+  font-size: 18px;
 }
 
 .question__section-answer-two-container {
@@ -194,6 +199,11 @@
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   padding-block-start: 20px;
+}
+
+.question__section-answer-title {
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .question__section-title-two {
@@ -204,11 +214,12 @@
   margin-block-end: 10px;
 }
 
-.question__section__three {
+.question__section-three {
   display: grid;
   grid-template-columns: 34% 66%;
   margin: 0 20px;
   padding-block-end: 80px;
+  font-size: 18px;
 }
 
 .question__section-answer-subtitle {
@@ -303,17 +314,17 @@
     max-block-size: 117px;
   }
 
-  .question__section__one,
-  .question__section__three {
+  .question__section-one,
+  .question__section-three {
     gap: 20px;
     padding-inline-end: 20px;
   }
 
-  .question__section__one {
+  .question__section-one {
     grid-template-columns: 33% 67%;
   }
 
-  .question__section__three {
+  .question__section-three {
     grid-template-columns: 35% 65%;
   }
 
@@ -327,52 +338,59 @@
   }
 }
 
-@media (max-width: 560px) {
-  .header,
-  .footer {
+@media (max-width:560px) {
+  .header {
     padding: 10px;
   }
 
-  .header__title,
-  .footer__title {
+  .header__title {
+    margin-left: 0px;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    margin-left: 0;
   }
 
   .header__text {
     max-inline-size: 355px;
     max-block-size: 117px;
-  }
+  }  
 
-  .question__section__one,
-  .question__section-two,
-  .question__section__three,
-  .question__section__image {
-    margin: 0 10px;
-  }
-
-  .question__section__one {
+  .question__section-one {
+    margin: 0px 10px;
+    padding: 40px 0 0 0;
     display: flex;
     flex-direction: column;
-    padding-block-start: 40px;
+    gap: 20px;
   }
 
   .question__section-two {
-    padding-block: 50px;
+    margin: 0 10px;
+    padding-block-start: 50px;
+    padding-inline-end: 0 ;
+    padding-block-end: 50px;
   }
 
-  .question__section__three {
+  .question__section-title-two {
+    min-inline-size: 355px;
+  }
+
+  .question__section-answer-two-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .question__section-three {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding-block-end: 50px;
   }
 
   .question__section__image {
-    padding-block-end: 40px;
+    padding: 0 0 40px 0;
   }
 
   .question__section-title-image {
-    margin-block-end: 10px;
+    margin: 0 10px 10px 10px;
   }
 
   .question__section__image-container {
@@ -382,13 +400,26 @@
     margin: 0 10px;
   }
 
-  .question__section-title-two {
-    min-inline-size: 355px;
+  .footer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  } 
+
+  .footer__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
-  .decorative__element,
-  .frame::before,
+  .decorative__element {
+    margin: 10px;
+  }
+  
+  .frame::before {
+    margin: 10px;
+  }
+  
   .frame::after {
+    block-size: 25px;
     margin: 10px;
   }
 }
