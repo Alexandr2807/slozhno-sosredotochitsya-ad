@@ -66,17 +66,17 @@
 }
 
 .decorative__element {
-  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 0;
   color: var(--btn-color);
   display: flex;
+  align-items: center;
   gap: 10px;
-  margin: 20px;
   padding-right: 8px;
-  position: absolute;
-  right: 0;
   text-align: center;
   text-transform: uppercase;
-  top: 0;
 }
 
 .decorative__element::after {
@@ -101,17 +101,29 @@
 }
 
 .frame::before {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 0;
+  border: 1px solid var(--btn-color);
   border-bottom: none;
   border-left: none;
-  right: 0;
-  top: 0;
+  width: 25px;
+  height: 25px;
+  content: "";
 }
 
 .frame::after {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  border: 1px solid var(--btn-color);
   border-right: none;
   border-top: none;
-  bottom: 0;
-  left: 0;
+  width: 25px;
+  height: 25px;
+  content: "";
 }
 
 .header__title {
