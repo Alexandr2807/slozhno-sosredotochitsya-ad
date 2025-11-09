@@ -133,6 +133,7 @@
   line-height: 82.5%;
   text-shadow: 4px 4px 0 var(--accent-color);
   display: block;
+  padding-left: 20px;
 }
 
 .title-decor {
