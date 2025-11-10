@@ -12,6 +12,7 @@
   min-height: 100%;
   z-index: 0;
   background-color: var(--background-color);
+  overflow-x: hidden;
 }
 
 .header {
