@@ -395,7 +395,6 @@
     margin: 0 10px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     padding-block-end: 50px;
   }
 
