@@ -381,7 +381,11 @@
     padding-inline-end: 0 ;
     padding-block-end: 50px;
   }
-
+  
+  .question__section-title-two {
+    min-inline-size: 355px;
+  }
+  
   .question__section-answer-two-container {
     display: flex;
     flex-direction: column;
