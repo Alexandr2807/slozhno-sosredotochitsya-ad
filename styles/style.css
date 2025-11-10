@@ -339,7 +339,7 @@
   }
 
   .question__section-three {
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 33% 67%;
   }
 
   .question__section-answer-two-container {
@@ -392,7 +392,8 @@
   }
 
   .question__section-three {
-    margin: 0 10px;
+    width: 375px;
+    margin: 0 0 0 10px;
     display: flex;
     flex-direction: column;
     padding-block-end: 50px;
