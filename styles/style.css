@@ -382,17 +382,12 @@
     padding-block-end: 50px;
   }
 
-  .question__section-title-two {
-    min-inline-size: 355px;
-  }
-
   .question__section-answer-two-container {
     display: flex;
     flex-direction: column;
   }
 
   .question__section-three {
-    width: 375px;
     margin: 0 0 0 10px;
     display: flex;
     flex-direction: column;
